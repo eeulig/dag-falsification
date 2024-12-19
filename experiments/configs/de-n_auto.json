@@ -1,0 +1,19 @@
+{
+    "SAVEDIR": "results/de-n_auto",
+    "DATASET": {
+      "TYPE": "auto",
+      "DAG_ARGS": {"num_samples": 50}
+    },
+    "validate_graph_args": {
+      "independence_test": "kernel_based",
+      "conditional_independence_test": "kernel_based"
+    },
+    "baseline_args": {
+      "n_permutations": 1000,
+      "show_progress_bar": false,
+      "exclude_original_order": false
+    },
+    "HYPOTHESES_TYPE": "domain_expert_nodes",
+    "HYPOTHESES":[0.2, 0.4, 0.6, 0.8, 1.0]
+  }
+  

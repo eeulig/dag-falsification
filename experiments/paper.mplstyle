@@ -1,0 +1,30 @@
+# Plot
+lines.markersize  : 4
+
+# AXES
+axes.titlesize : 8
+axes.labelsize : 10
+
+# LEGEND
+legend.frameon: False
+legend.fontsize: 6
+# LINES
+axes.prop_cycle : cycler('color',['0173b2', 'de8f05', '029e73', 'd55e00', 'cc78bc', 'ca9161', 'fbafe4', '949494', 'ece133', '56b4e9', '0173b2', 'de8f05'])
+lines.linewidth : 1.5
+
+# TICKS
+xtick.labelsize : 6
+ytick.labelsize : 6
+
+# FIGURE OUTPUT
+figure.figsize  : 6.75133, 4
+figure.dpi : 300
+savefig.dpi : 300
+
+# FONTS AND LATEX
+text.usetex: False
+font.family:  DejaVu Sans
+font.style:   normal
+font.size:    8.0
+font.sans-serif: Helvetica
+mathtext.fontset: cm

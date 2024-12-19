@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dag-falsification"
+version = "0.0.1"
+authors = [
+    {name = "Elias Eulig", email = "elias.eulig@dkfz.de"},
+]
+description = "Code for the paper: Toward Falsifying Causal Graphs Using a Permutation-Based Test"
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+    "dowhy",
+    "pygraphviz",
+    "numpy==1.26.4",
+    "typing-extensions",
+    "xlrd>=2.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "poethepoet",
+    "flake8",
+]
+
+[tool.setuptools.packages.find]
+include = ["falsifydags*"]
+exclude = ["env*", "experiments*", "results*"]
+namespaces = false
+
+[tool.black]
+exclude = '''
+/(
+    env
+    | \.git
+    | build
+)/
+'''
+target-version = ["py310"]
+color = true
+line-length = 88
+
+[tool.isort]
+skip = ["env", "build", ".git"]
+profile = "black"
+skip_gitignore = true
+color_output = false
+
+[tool.poe.tasks]
+_black = 'black .'
+_isort = 'isort .'
+_black_check = 'black --check .'
+_isort_check = 'isort --check .'
+lint = "flake8 . --select=E9,F63,F7,F82 --show-source --statistics"
+
+[tool.poe.tasks.format]
+sequence = ['_black', '_isort']
+ignore_fail = 'return_non_zero'
+
+[tool.poe.tasks.format_check]
+sequence = ['lint', '_black_check', '_isort_check']
+ignore_fail = 'return_non_zero'

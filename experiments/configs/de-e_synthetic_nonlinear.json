@@ -1,0 +1,27 @@
+{
+  "SAVEDIR": "results/de-e_synthetic_nonlinear",
+  "DATASET": {
+    "TYPE": "synthetic",
+    "DAG_ARGS": {
+      "num_samples": 50,
+      "num_nodes": [10, 20, 30],
+      "degree": [1, 2, 3]
+    },
+    "DATASET_ARGS": {
+      "num_samples": 1000,
+      "prob_nonlinear": 1.0,
+      "gaussian_only": false
+    }
+  },
+  "validate_graph_args": {
+    "independence_test": "gcm",
+    "conditional_independence_test": "gcm"
+  },
+  "baseline_args": {
+    "n_permutations": 1000,
+    "show_progress_bar": false,
+    "exclude_original_order": false
+  },
+  "HYPOTHESES_TYPE": "domain_expert_edges",
+  "HYPOTHESES":[0.0, 0.5, 1.0, 1.5, 2.0]
+}

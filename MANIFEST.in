@@ -1,0 +1,4 @@
+include falsifydags/data/APM_data.csv
+include falsifydags/data/APM_g_true.gml
+include falsifydags/data/sachs_data.xls
+include falsifydags/data/sachs_g_true.gml
