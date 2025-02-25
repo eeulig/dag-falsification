@@ -65,15 +65,12 @@ data, g_true = load_apm_data()
 This code uses our implementation provided as part of the Python package [DoWhy](https://github.com/py-why/dowhy). For more details on how to use it on your own datasets, please see the [DoWhy documentation](https://www.pywhy.org/dowhy/v0.10/dowhy.gcm.html#dowhy.gcm.falsify.falsify_graph) and this [example notebook](https://www.pywhy.org/dowhy/v0.10/example_notebooks/gcm_falsify_dag.html).
 
 ## Reference
-if you find this project useful for your work, please cite our [arXiv preprint](https://arxiv.org/pdf/2305.09565):
-```bibtex
+If you find this project useful for your work, please cite our [paper](https://arxiv.org/pdf/2305.09565):
+```
 @article{dag-falsification,
-    title={Toward Falsifying Causal Graphs Using a Permutation-Based Test}, 
-    author={Elias Eulig and Atalanti A. Mastakouri and Patrick Blöbaum and Michaela Hardt and Dominik Janzing},
-    year={2023},
-    eprint={2305.09565},
-    archivePrefix={arXiv},
-    primaryClass={stat.ML},
-    url={https://arxiv.org/abs/2305.09565}, 
+    title = {Toward Falsifying Causal Graphs Using a Permutation-Based Test}, 
+    author = {Elias Eulig and Atalanti A. Mastakouri and Patrick Blöbaum and Michaela Hardt and Dominik Janzing},
+    year = {2025},
+    journal = {Proceedings of the AAAI Conference on Artificial Intelligence}, 
 }
 ```
