@@ -12,9 +12,15 @@ We provide an implementation of our metric as part of the Python package [DoWhy]
 Please contact [Elias Eulig](mailto:contact@eeulig.com?subject=[GitHub]%20DAG%20Falsification) for any questions or comments. If our work is helpful to your research, please consider citing our paper:
 ```
 @article{dag-falsification,
-    title = {Toward Falsifying Causal Graphs Using a Permutation-Based Test}, 
-    author = {Elias Eulig and Atalanti A. Mastakouri and Patrick Blöbaum and Michaela Hardt and Dominik Janzing},
+    author = {Eulig, Elias and Mastakouri, Atalanti A. and Blöbaum, Patrick and Hardt, Michaela and Janzing, Dominik},
+    title = {Toward Falsifying Causal Graphs Using a Permutation-Based Test},
+    journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+    volume = {39},
+    number = {25},
+    pages = {26778-26786},
+    doi = {10.1609/aaai.v39i25.34881},
+    url = {https://ojs.aaai.org/index.php/AAAI/article/view/34881},
     year = {2025},
-    journal = {Proceedings of the AAAI Conference on Artificial Intelligence}, 
+    month = apr
 }
 ```
