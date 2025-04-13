@@ -1,7 +1,6 @@
 # Toward Falsifying Causal Graphs Using a Permutation-Based Test
 This repository contains code for the paper
-
-> E. Eulig, A. A. Mastakouri, P. Blöbaum, M. Hardt, and D. Janzing, "Toward Falsifying Causal Graphs Using a Permutation-Based Test", in Proceedings of the AAAI Conference on Artificial Intelligence, 2025.
+> E. Eulig, A. A. Mastakouri, P. Blöbaum, M. Hardt, and D. Janzing, ‘Toward Falsifying Causal Graphs Using a Permutation-Based Test’, Proceedings of the AAAI Conference on Artificial Intelligence, vol. 39, no. 25, pp. 26778–26786, 2025.
 
 **Abstract**
 
@@ -68,9 +67,15 @@ This code uses our implementation provided as part of the Python package [DoWhy]
 If you find this project useful for your work, please cite our [paper](https://arxiv.org/pdf/2305.09565):
 ```
 @article{dag-falsification,
-    title = {Toward Falsifying Causal Graphs Using a Permutation-Based Test}, 
-    author = {Elias Eulig and Atalanti A. Mastakouri and Patrick Blöbaum and Michaela Hardt and Dominik Janzing},
-    year = {2025},
-    journal = {Proceedings of the AAAI Conference on Artificial Intelligence}, 
+  title = {Toward Falsifying Causal Graphs Using a Permutation-Based Test},
+  author = {Eulig, Elias and Mastakouri, Atalanti A. and Blöbaum, Patrick and Hardt, Michaela and Janzing, Dominik},
+  journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume = {39},
+  number = {25},
+  pages = {26778-26786},
+  doi = {10.1609/aaai.v39i25.34881},
+  url = {https://ojs.aaai.org/index.php/AAAI/article/view/34881},
+  year = {2025},
+  month = apr
 }
 ```
